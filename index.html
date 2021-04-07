@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Life Todo</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src='script.js'></script>
+</head>
+<body>
+  <div id="todo">
+    <h1 class='title'>Life Todo (남은 할일 x개)</h1>
+    <div class="content">
+      <div class="add-todo">
+        <input type="text">
+        <button>추가</button>
+      </div>
+      
+      <div id="task">
+        <div class="card">
+          <div class="status-bar">
+            <input type="checkbox" id="b" onclick="remove_card(this)">
+            <label for="a">Done</label>
+            <input type="checkbox" id="giveup">
+            <label for="giveup">Give Up</label>
+          </div>
+          <hr>
+          <div class="item">
+            도서관에서 책 읽기
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="status-bar">
+            <input type="checkbox" id="a">
+            <label for="a">Done</label>
+          </div>
+          <hr>
+          <div class="item">
+            도서관에서 책 읽기
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="status-bar">
+            <input type="checkbox" id="a">
+            <label for="a">Done</label>
+          </div>
+          <hr>
+          <div class="item">
+            도서관에서 책 읽기
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="status-bar">
+            <input type="checkbox" id="a">
+            <label for="a">Done</label>
+          </div>
+          <hr>
+          <div class="item">
+            도서관에서 책 읽기
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="status-bar">
+            <input type="checkbox" id="a">
+            <label for="a">Done</label>
+          </div>
+          <hr>
+          <div class="item">
+            도서관에서 책 읽기
+          </div>
+        </div>
+      </div>
+      <div id="complete">
+
+      </div>
+  </div>
+
+  </div>
+</body>
+</html>
