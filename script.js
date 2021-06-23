@@ -3,10 +3,9 @@
 // remove
 function remove_card(checkbox) {
   let card = checkbox.parentElement.parentElement;
-  card.classList.add('kkk')
-  // card.parentNode.removeChild(card);
+  card.classList.add('remove')
+  setTimeout(() => {
+    card.parentNode.removeChild(card);
+  }, 1200)
+  
 }
-
-$(document).on('transitionend', '.kkk',() => {
-  $(this).remove();
-})

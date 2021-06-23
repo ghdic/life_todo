@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Life Todo</title>
   <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script type="text/javascript" src='script.js'></script>
 </head>
 <body>
@@ -18,68 +19,131 @@
       </div>
       
       <div id="task">
-        <div class="card">
-          <div class="status-bar">
-            <input type="checkbox" id="b" onclick="remove_card(this)">
-            <label for="a">Done</label>
-            <input type="checkbox" id="giveup">
-            <label for="giveup">Give Up</label>
+        <div id="rest">
+          <div class="rest-title">해야할일</div>
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
+              <label class="done-button">Done</label>
+              <input type="checkbox" class="giveup-checkbox">
+              <label class="giveup-button">Give Up</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
           </div>
-          <hr>
-          <div class="item">
-            도서관에서 책 읽기
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
+              <label class="done-button">Done</label>
+              <input type="checkbox" class="giveup-checkbox">
+              <label class="giveup-button">Give Up</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
           </div>
-        </div>
 
-        <div class="card">
-          <div class="status-bar">
-            <input type="checkbox" id="a">
-            <label for="a">Done</label>
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
+              <label class="done-button">Done</label>
+              <input type="checkbox" class="giveup-checkbox">
+              <label class="giveup-button">Give Up</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
           </div>
-          <hr>
-          <div class="item">
-            도서관에서 책 읽기
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="status-bar">
-            <input type="checkbox" id="a">
-            <label for="a">Done</label>
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
+              <label class="done-button">Done</label>
+              <input type="checkbox" class="giveup-checkbox">
+              <label class="giveup-button">Give Up</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
           </div>
-          <hr>
-          <div class="item">
-            도서관에서 책 읽기
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="status-bar">
-            <input type="checkbox" id="a">
-            <label for="a">Done</label>
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
+              <label class="done-button">Done</label>
+              <input type="checkbox" class="giveup-checkbox">
+              <label class="giveup-button">Give Up</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
           </div>
-          <hr>
-          <div class="item">
-            도서관에서 책 읽기
-          </div>
-        </div>
 
-        <div class="card">
-          <div class="status-bar">
-            <input type="checkbox" id="a">
-            <label for="a">Done</label>
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
+              <label class="done-button">Done</label>
+              <input type="checkbox" class="giveup-checkbox">
+              <label class="giveup-button">Give Up</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
           </div>
-          <hr>
-          <div class="item">
-            도서관에서 책 읽기
+
+          <div class="card" style="background: none;height: 0;">
           </div>
+
+        </div>
+        <hr width="100%">
+        <div id="complete">
+          <div class="complete-title">완료한일</div>
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox">
+              <label class="done-button">Done</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox">
+              <label class="done-button">Done</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="status-bar">
+              <input type="checkbox" class="done-checkbox">
+              <label class="done-button">Done</label>
+            </div>
+            <hr>
+            <div class="item">
+              도서관에서 책 읽기
+            </div>
+          </div>
+
+          <div class="card" style="background: none; height: 0px;overflow: hidden;">
+          </div>
+
         </div>
       </div>
-      <div id="complete">
-
-      </div>
-  </div>
-
-  </div>
+      
+    </div>
 </body>
 </html>
