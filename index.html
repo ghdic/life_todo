@@ -11,93 +11,16 @@
 </head>
 <body>
   <div id="todo">
-    <h1 class='title'>Life Todo (남은 할일 x개)</h1>
+    <h1 class='todo-title'>Life Todo (남은 할일 x개)</h1>
     <div class="content">
       <div class="add-todo">
-        <input type="text">
-        <button>추가</button>
+        <input type="text" id="todo_input" onkeydown="if(event.keyCode == 13) add_card()">
+        <button onclick="add_card()">추가</button>
       </div>
       
       <div id="task">
         <div id="rest">
           <div class="rest-title">해야할일</div>
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
-              <label class="done-button">Done</label>
-              <input type="checkbox" class="giveup-checkbox">
-              <label class="giveup-button">Give Up</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
-              <label class="done-button">Done</label>
-              <input type="checkbox" class="giveup-checkbox">
-              <label class="giveup-button">Give Up</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
-              <label class="done-button">Done</label>
-              <input type="checkbox" class="giveup-checkbox">
-              <label class="giveup-button">Give Up</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
-              <label class="done-button">Done</label>
-              <input type="checkbox" class="giveup-checkbox">
-              <label class="giveup-button">Give Up</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
-              <label class="done-button">Done</label>
-              <input type="checkbox" class="giveup-checkbox">
-              <label class="giveup-button">Give Up</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox" onclick="remove_card(this)">
-              <label class="done-button">Done</label>
-              <input type="checkbox" class="giveup-checkbox">
-              <label class="giveup-button">Give Up</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
           <div class="card" style="background: none;height: 0;">
           </div>
 
@@ -105,40 +28,7 @@
         <hr width="100%">
         <div id="complete">
           <div class="complete-title">완료한일</div>
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox">
-              <label class="done-button">Done</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox">
-              <label class="done-button">Done</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="status-bar">
-              <input type="checkbox" class="done-checkbox">
-              <label class="done-button">Done</label>
-            </div>
-            <hr>
-            <div class="item">
-              도서관에서 책 읽기
-            </div>
-          </div>
-
-          <div class="card" style="background: none; height: 0px;overflow: hidden;">
+          <div class="card" style="background: none; height: 0px;">
           </div>
 
         </div>
