@@ -105,7 +105,6 @@ function remove_card(checkbox) {
 function todo_cnt() {
   let title = document.querySelector(".todo-title");
   let cnt = document.querySelectorAll("#rest .card").length - 1;
-  console.log(cnt)
   title.innerText = `Life Todo (남은 할일 ${cnt}개)`
 }
 
